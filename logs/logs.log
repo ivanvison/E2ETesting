@@ -1,0 +1,3 @@
+23:51:41.773 [TestNG-tests-3] INFO  resources.base - Clicked Forgot Password
+23:51:41.778 [AsyncHttpClient-1-3] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+23:51:42.036 [TestNG-tests-3] INFO  resources.base - Quitting Browser

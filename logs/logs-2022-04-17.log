@@ -1,0 +1,7 @@
+23:51:34.501 [TestNG-tests-5] INFO  resources.base - Quitting Browser
+23:51:39.622 [TestNG-tests-3] INFO  resources.base - Navigated to Websitehttps://qaclickacademy.com
+23:51:40.758 [TestNG-tests-3] INFO  resources.base - Going to Log In section
+23:51:40.875 [TestNG-tests-3] INFO  resources.base - Inserted Username
+23:51:40.961 [TestNG-tests-3] INFO  resources.base - Inserted Password
+23:51:41.373 [TestNG-tests-3] INFO  resources.base - Clicked Submit Button
+23:51:41.373 [TestNG-tests-3] INFO  resources.base - Restricted User

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="Unicorn Test">
+    <classes>
+      <class name="academy.UnicornValidationTest"/>
+    </classes>      
+  </test>
+
+  <test thread-count="5" name="App Test">
+    <classes>
+      <class name="academy.AppTest"/>
+    </classes>      
+  </test>
+
+  <test thread-count="5" name="Homepage">
+    <classes>
+      <class name="academy.HomePage"/>
+    </classes>      
+  </test>
+
+  <test thread-count="5" name="Validating Title">
+    <classes>
+      <class name="academy.validateTitle"/>
+    </classes>      
+  </test>
+
+  <test thread-count="5" name="Validating NavBar">
+    <classes>
+      <class name="academy.validateNavBar"/>
+    </classes>      
+  </test>
+
+</suite> <!-- Suite -->
