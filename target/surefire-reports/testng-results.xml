@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-18T22:34:01 BOT" name="Suite" finished-at="2022-04-18T22:34:22 BOT" duration-ms="21221">
+    <groups>
+    </groups>
+    <test started-at="2022-04-18T22:34:01 BOT" name="Validating Home Elements" finished-at="2022-04-18T22:34:10 BOT" duration-ms="8838">
+      <class name="academy.validateHomeElements">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:academy.validateHomeElements@4212a0c8]" started-at="2022-04-18T22:34:01 BOT" name="initialize" finished-at="2022-04-18T22:34:09 BOT" duration-ms="8302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateApplicationMainTitle()[pri:0, instance:academy.validateHomeElements@4212a0c8]" started-at="2022-04-18T22:34:09 BOT" name="validateApplicationMainTitle" finished-at="2022-04-18T22:34:09 BOT" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateApplicationMainTitle -->
+        <test-method signature="validateApplicationNavBar()[pri:0, instance:academy.validateHomeElements@4212a0c8]" started-at="2022-04-18T22:34:09 BOT" name="validateApplicationNavBar" finished-at="2022-04-18T22:34:09 BOT" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateApplicationNavBar -->
+        <test-method signature="validateApplicationTitle()[pri:0, instance:academy.validateHomeElements@4212a0c8]" started-at="2022-04-18T22:34:09 BOT" name="validateApplicationTitle" finished-at="2022-04-18T22:34:09 BOT" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateApplicationTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.validateHomeElements@4212a0c8]" started-at="2022-04-18T22:34:09 BOT" name="tearDown" finished-at="2022-04-18T22:34:10 BOT" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- academy.validateHomeElements -->
+    </test> <!-- Validating Home Elements -->
+    <test started-at="2022-04-18T22:34:01 BOT" name="Homepage" finished-at="2022-04-18T22:34:13 BOT" duration-ms="12311">
+      <class name="academy.HomePage">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:academy.HomePage@4d18aa28]" started-at="2022-04-18T22:34:01 BOT" name="initialize" finished-at="2022-04-18T22:34:03 BOT" duration-ms="2709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="ValidateLoginSessions(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:academy.HomePage@4d18aa28]" started-at="2022-04-18T22:34:04 BOT" name="ValidateLoginSessions" data-provider="getData" finished-at="2022-04-18T22:34:13 BOT" duration-ms="9311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[First Set]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nonrestricteduser@amazingqa.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[amazing]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non Restricted User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLoginSessions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.HomePage@4d18aa28]" started-at="2022-04-18T22:34:13 BOT" name="tearDown" finished-at="2022-04-18T22:34:13 BOT" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- academy.HomePage -->
+    </test> <!-- Homepage -->
+    <test started-at="2022-04-18T22:34:01 BOT" name="Forgot Password" finished-at="2022-04-18T22:34:22 BOT" duration-ms="21221">
+      <class name="academy.validateForgotPassword">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:academy.validateForgotPassword@57fd91c9]" started-at="2022-04-18T22:34:01 BOT" name="initialize" finished-at="2022-04-18T22:34:03 BOT" duration-ms="2700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="ForgotPasswordValidation()[pri:0, instance:academy.validateForgotPassword@57fd91c9]" started-at="2022-04-18T22:34:04 BOT" name="ForgotPasswordValidation" finished-at="2022-04-18T22:34:22 BOT" duration-ms="18045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgotPasswordValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.validateForgotPassword@57fd91c9]" started-at="2022-04-18T22:34:22 BOT" name="tearDown" finished-at="2022-04-18T22:34:22 BOT" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- academy.validateForgotPassword -->
+    </test> <!-- Forgot Password -->
+  </suite> <!-- Suite -->
+</testng-results>

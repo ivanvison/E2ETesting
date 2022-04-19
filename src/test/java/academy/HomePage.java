@@ -27,38 +27,31 @@ public class HomePage extends base {
 	}
 	
 	@Test(dataProvider="getData")
-	public void basePageNavigation(String DataSet, String Username, String Password, String Text) throws IOException {	
+	public void ValidateLoginSessions(String DataSet, String Username, String Password, String Text) throws IOException {	
 		//Access method of a class: Inheritance or creating an object to the class and invoke method
-		LandingPage l = new LandingPage(driver);
-		
 		driver.get(prop.getProperty("url"));
 		log.info("Navigated to Website" + prop.getProperty("url"));
-		if(DataSet.equalsIgnoreCase("First Set")) {
-			l.closePopup().click();
-			log.info("Closed popup");
-		}
-		l.getLogin().click();
-		log.info("Going to Log In section");
+		
+		LandingPage l = new LandingPage(driver);	
 		
 		//LoginPage
-		LoginPage lp = new LoginPage(driver);
+		LoginPage lp = l.getLogin();
+		log.info("Going to Log In section");
+		log.info(DataSet);
 		lp.getUsername().sendKeys(Username);
 		log.info("Inserted Username");
 		lp.getPassword().sendKeys(Password);
 		log.info("Inserted Password");
 		lp.getButton().click();
 		log.info("Clicked Submit Button");
-		//System.out.println(Text);
 		log.info(Text);
 		
-		lp.forgotPassword().click();
-		log.info("Clicked Forgot Password");
 	}
 	
 	@AfterTest
 	public void tearDown() {
-		driver.quit();
 		log.info("Quitting Browser");
+		driver.quit();
 	}
 	
 	@DataProvider
@@ -66,7 +59,7 @@ public class HomePage extends base {
 		//Row stands for how many different data type test should run. This example is 2
 		//Column stands for values per each test case
 		//IMPORTANT: Object creation is the actual amount of rows, not the index. 
-		Object[][] data = new Object[2][4];
+		Object[][] data = new Object[1][4];
 		
 		//0 row
 		data[0][0] = "First Set";
@@ -75,10 +68,10 @@ public class HomePage extends base {
 		data[0][3] = "Non Restricted User";
 		
 		//1 row
-		data[1][0] = "Second Set";
-		data[1][1] = "restricteduser@amazingqa.com";
-		data[1][2] = "amazingNOT";
-		data[1][3] = "Restricted User";
+		//data[1][0] = "Second Set";
+		//data[1][1] = "restricteduser@amazingqa.com";
+		//data[1][2] = "amazingNOT";
+		//data[1][3] = "Restricted User";
 		
 		return data;
 	}

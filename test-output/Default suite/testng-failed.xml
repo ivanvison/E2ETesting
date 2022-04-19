@@ -5,9 +5,9 @@
     <classes>
       <class name="academy.UnicornValidationTest">
         <methods>
+          <include name="validateUnicornTest"/>
           <include name="tearDown"/>
           <include name="initialize"/>
-          <include name="basePageNavigation"/>
         </methods>
       </class> <!-- academy.UnicornValidationTest -->
     </classes>

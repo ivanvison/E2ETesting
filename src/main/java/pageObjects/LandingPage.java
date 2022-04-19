@@ -1,45 +1,39 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class LandingPage {
 
 	public WebDriver driver;
 	
+	private By signIn = By.xpath("//a[contains(text(),'Login')]");
+	private By h2MainTitle = By.xpath("//span[contains(text(),'Academy')]");
+	private By h2Title = By.xpath("//h2[contains(text(),'Featured')]");
+	private By navBar = By.xpath("//div[@class='navbar-collapse collapse clearfix']");
+	
 	public LandingPage(WebDriver driver) {
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//button[contains(text(),'NO THANKS')]")
-	WebElement closePopup;
-	
-	@FindBy(xpath = "//span[contains(text(),'Login')]")
-	WebElement signIn;
-	
-	@FindBy(css = "div[class='text-center'] h2")
-	WebElement h2Title;
-	
-	@FindBy(xpath = "//ul[@class='nav navbar-nav navbar-right']")
-	WebElement navBar;
-	
 	//Objects at the top, methods a the bottom
-	public WebElement closePopup() {
-		return closePopup;
-	}
-	
-	public WebElement getLogin() {
-		return signIn;
+	public LoginPage getLogin() {
+		//return signIn;
+		driver.findElement(signIn).click();
+		LoginPage lp = new LoginPage(driver);
+		return lp;
 	}
 	
 	public WebElement getTitle() {
-		return h2Title;
+		return driver.findElement(h2Title);
+	}
+	
+	public WebElement getMainTitle() {
+		return driver.findElement(h2MainTitle);
 	}
 
 	public WebElement getNavBar() {
-		return navBar;
+		return driver.findElement(navBar);
 	}
 }

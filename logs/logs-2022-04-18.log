@@ -1,0 +1,6 @@
+22:34:13.330 [AsyncHttpClient-1-9] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+22:34:14.641 [TestNG-tests-3] INFO  resources.base - Going to Log In section
+22:34:21.729 [TestNG-tests-3] INFO  resources.base - Clicked Forgot Password
+22:34:21.953 [TestNG-tests-3] INFO  resources.base - Wrote Email
+22:34:22.062 [TestNG-tests-3] INFO  resources.base - Triggered Forgot Password.
+22:34:22.064 [AsyncHttpClient-1-8] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26

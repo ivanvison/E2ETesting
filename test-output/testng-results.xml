@@ -1,123 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-17T23:50:28 BOT" name="Suite" finished-at="2022-04-17T23:51:42 BOT" duration-ms="73791">
+  <suite started-at="2022-04-18T20:35:39 BOT" name="Default suite" finished-at="2022-04-18T20:35:39 BOT" duration-ms="103">
     <groups>
     </groups>
-    <test started-at="2022-04-17T23:50:28 BOT" name="App Test" finished-at="2022-04-17T23:50:28 BOT" duration-ms="17">
-    </test> <!-- App Test -->
-    <test started-at="2022-04-17T23:50:28 BOT" name="Unicorn Test" finished-at="2022-04-17T23:50:35 BOT" duration-ms="7647">
+    <test started-at="2022-04-18T20:35:39 BOT" name="Default test" finished-at="2022-04-18T20:35:39 BOT" duration-ms="103">
       <class name="academy.UnicornValidationTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:academy.UnicornValidationTest@f27ea3]" started-at="2022-04-17T23:50:28 BOT" name="initialize" finished-at="2022-04-17T23:50:34 BOT" duration-ms="5893" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:academy.UnicornValidationTest@1d7f7be7]" started-at="2022-04-18T20:35:39 BOT" name="initialize" finished-at="2022-04-18T20:35:39 BOT" duration-ms="17" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "browserName" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
+at resources.base.initializerDriver(base.java:36)
+at academy.UnicornValidationTest.initialize(UnicornValidationTest.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation()[pri:0, instance:academy.UnicornValidationTest@f27ea3]" started-at="2022-04-17T23:50:34 BOT" name="basePageNavigation" finished-at="2022-04-17T23:50:34 BOT" duration-ms="18" status="PASS">
+        <test-method signature="validateUnicornTest()[pri:0, instance:academy.UnicornValidationTest@1d7f7be7]" started-at="2022-04-18T20:35:39 BOT" name="validateUnicornTest" finished-at="2022-04-18T20:35:39 BOT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "browserName" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
+at resources.base.initializerDriver(base.java:36)
+at academy.UnicornValidationTest.initialize(UnicornValidationTest.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.UnicornValidationTest@f27ea3]" started-at="2022-04-17T23:50:34 BOT" name="tearDown" finished-at="2022-04-17T23:50:35 BOT" duration-ms="1629" status="PASS">
+        </test-method> <!-- validateUnicornTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.UnicornValidationTest@1d7f7be7]" started-at="2022-04-18T20:35:39 BOT" name="tearDown" finished-at="1969-12-31T20:00:00 BOT" duration-ms="-1650328539131" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- academy.UnicornValidationTest -->
-    </test> <!-- Unicorn Test -->
-    <test started-at="2022-04-17T23:50:28 BOT" name="Validating Title" finished-at="2022-04-17T23:51:11 BOT" duration-ms="43728">
-      <class name="academy.validateTitle">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:academy.validateTitle@25ddbbbb]" started-at="2022-04-17T23:50:28 BOT" name="initialize" finished-at="2022-04-17T23:51:10 BOT" duration-ms="42699" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation()[pri:0, instance:academy.validateTitle@25ddbbbb]" started-at="2022-04-17T23:51:10 BOT" name="basePageNavigation" finished-at="2022-04-17T23:51:11 BOT" duration-ms="276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.validateTitle@25ddbbbb]" started-at="2022-04-17T23:51:11 BOT" name="tearDown" finished-at="2022-04-17T23:51:11 BOT" duration-ms="747" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- academy.validateTitle -->
-    </test> <!-- Validating Title -->
-    <test started-at="2022-04-17T23:50:28 BOT" name="Validating NavBar" finished-at="2022-04-17T23:51:34 BOT" duration-ms="66242">
-      <class name="academy.validateNavBar">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:academy.validateNavBar@7fcbe147]" started-at="2022-04-17T23:50:28 BOT" name="initialize" finished-at="2022-04-17T23:51:34 BOT" duration-ms="65794" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation()[pri:0, instance:academy.validateNavBar@7fcbe147]" started-at="2022-04-17T23:51:34 BOT" name="basePageNavigation" finished-at="2022-04-17T23:51:34 BOT" duration-ms="185" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.validateNavBar@7fcbe147]" started-at="2022-04-17T23:51:34 BOT" name="tearDown" finished-at="2022-04-17T23:51:34 BOT" duration-ms="255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- academy.validateNavBar -->
-    </test> <!-- Validating NavBar -->
-    <test started-at="2022-04-17T23:50:28 BOT" name="Homepage" finished-at="2022-04-17T23:51:42 BOT" duration-ms="73776">
-      <class name="academy.HomePage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:academy.HomePage@305f031]" started-at="2022-04-17T23:50:28 BOT" name="initialize" finished-at="2022-04-17T23:50:34 BOT" duration-ms="5888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:academy.HomePage@305f031]" started-at="2022-04-17T23:50:34 BOT" name="basePageNavigation" data-provider="getData" finished-at="2022-04-17T23:51:20 BOT" duration-ms="46044" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[First Set]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[nonrestricteduser@amazingqa.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[amazing]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Non Restricted User]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:academy.HomePage@305f031]" started-at="2022-04-17T23:51:20 BOT" name="basePageNavigation" data-provider="getData" finished-at="2022-04-17T23:51:41 BOT" duration-ms="21490" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Second Set]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[restricteduser@amazingqa.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[amazingNOT]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Restricted User]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.HomePage@305f031]" started-at="2022-04-17T23:51:41 BOT" name="tearDown" finished-at="2022-04-17T23:51:42 BOT" duration-ms="259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- academy.HomePage -->
-    </test> <!-- Homepage -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

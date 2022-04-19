@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests">
-  <test thread-count="5" name="Unicorn Test">
-    <classes>
-      <class name="academy.UnicornValidationTest"/>
-    </classes>      
-  </test>
 
-  <test thread-count="5" name="App Test">
+<listeners>
+	<listener class-name="academy.Listeners"/>
+</listeners> 
+
+
+  <test thread-count="5" name="Validating Home Elements">
     <classes>
-      <class name="academy.AppTest"/>
+      <class name="academy.validateHomeElements"/>
     </classes>      
   </test>
 
@@ -19,15 +19,9 @@
     </classes>      
   </test>
 
-  <test thread-count="5" name="Validating Title">
+ <test thread-count="5" name="Forgot Password">
     <classes>
-      <class name="academy.validateTitle"/>
-    </classes>      
-  </test>
-
-  <test thread-count="5" name="Validating NavBar">
-    <classes>
-      <class name="academy.validateNavBar"/>
+      <class name="academy.validateForgotPassword"/>
     </classes>      
   </test>
 
