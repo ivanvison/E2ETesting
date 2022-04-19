@@ -1,6 +1,6 @@
 Thank you for getting to this point. This repository was created for an E2E Testing Project created while learning Selenium with Java. Course by Rahul Shetty from www.rahulshettyacademy.com.
 
-In this test, a particular website was used: https://www.greenlinknetworks.com/
+In this test, a particular website was used: https://www.rahulshettyacademy.com
 
 ## Topics Covered - Building a Framework from Scratch
 - Create Maven Project
